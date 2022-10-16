@@ -10,9 +10,13 @@
     src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
   />
 </a>
+
 <script>
+function onload() {
 document.getElementById("kakao-link-btn").click();
+}
 </script>
+
 <script type="text/javascript">
  Kakao.init('34a6548bfa658d0c04b51e48a1ed80e4');
   function sendLink() {
@@ -45,5 +49,6 @@ document.getElementById("kakao-link-btn").click();
     })
   }
 </script>
+<body onload="onload()">
   </body>
 </html>
