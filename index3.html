@@ -1,11 +1,9 @@
 <html>
 <head>
-<title>JEJE Project </title>
+<title>JEJE Project 111</title>
 <script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
-<a id="#" onclick="javascript:window.close();opener.window.focus();" >Close Window</a>
-
 <a id="kakao-link-btn" href="javascript:sendLink()">
   <img
     src=""
@@ -17,6 +15,15 @@ function onload() {
 document.getElementById("kakao-link-btn").click();
 }
 </script>
+
+<a href="#" id="popupClose">현재창닫기</a>
+<script>
+$("#popupClose").on("click", function(e){
+  e.preventDefault();
+  window.close();
+});
+</script>
+
 
 <script type="text/javascript">
  Kakao.init('34a6548bfa658d0c04b51e48a1ed80e4');
@@ -48,10 +55,9 @@ document.getElementById("kakao-link-btn").click();
         },
       ],
     })
-document.getElementById("#").click();
   }
-
 </script>
+
 <body onload="onload()">
   </body>
 </html>
