@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>카카오톡 팝업 전송 테스트22</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요22</strong> By. Blackcats4567</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('34a6548bfa658d0c04b51e48a1ed80e4');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '아마그램 AUTUMN호',
+        description: '깊어지는 가을과 함께 아마그램337호!',
+        imageUrl:
+          'https://media.amway.co.kr/sys-master/images/hac/hcc/9286471057438/OT_311224K_1_640.png',
+        link: {
+          mobileWebUrl: 'https://www.naver.com',
+          webUrl: 'https://www.naver.com',
+        },
+      },
+      social: {
+        likeCount: 99999, //99999가 최대입니다
+        commentCount: 99999, //99999가 최대입니다
+        sharedCount: 99999, //99999가 최대입니다
+      },
+      buttons: [
+        {
+          title: '자세히 보기',
+          link: {
+            mobileWebUrl: 'https://www.naver.com',
+            webUrl: 'https://www.naver.com',
+          },
+        },
+      ],
+    })
+  }
+</script>
+  </body>
+</html>
